@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Geolocation App by Kac</title>
+</head>
+<body>
+    <header>
+        <h3>To use it, please use your own API key for routing</h2>
+        <span>This is a Google API Map, created by Balazs Kaczor for developer purposes </span>
+    </header> 
+    <div class="userInput">
+        <input type="text" id="destination" placeholder="Type your destination here..." onkeyup="if (event.keyCode == 13) {requestFromInputSubmit(); return false}" >
+        <b>Mode of Travel:</b>
+        <select name="mode" id="mode">
+            <option value="DRIVING">Driving</option>
+            <option value="WALKING">Walking</option>
+            <option value="BICYCLING">cycling</option>
+            <option value="TRANSIT">Transit</option>
+        </select>
+        <button type="submit" id="destinationRoute">Show route</button>
+    </div>
+    
+   <figure id="myMap"></figure>
+    <script src="./script.js"></script>
+    <script src="./mapStyles.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=initialize"></script>
+    
+</body>
+</html>

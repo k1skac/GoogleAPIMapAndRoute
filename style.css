@@ -1,0 +1,30 @@
+#myMap{
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+}
+.userInput{
+    padding-bottom: 0 0 0 5px;
+    background-color: beige;
+    margin: 0;
+}
+#destination{
+    border-radius: 5px;
+    width: 11vw;
+    background-color: beige;
+}
+#destinationRoute{
+    border-radius: 5px;
+    background-color: beige;
+}
+header{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    background-color: beige;
+}
+#mode{
+    background-color: beige;
+    border-radius: 5px;
+    border-width: 2px;
+}
